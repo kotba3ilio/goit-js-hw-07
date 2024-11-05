@@ -34,5 +34,6 @@ const listItems = images.map((item) => {
   image.classList.add('img');
   listItem.classList.add('list-item');
   listItem.appendChild(image);
-  gallery.appendChild(listItem);
+  return listItem;
 });
+  gallery.append(...listItems);
